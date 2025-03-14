@@ -1,0 +1,45 @@
+{
+  "name": "SHMS API Environment",
+  "variables": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:6002",
+      "description": "Địa chỉ cơ sở của SHMS API theo PORT trong .env (6002)"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "description": "JWT token dùng để xác thực, cần được cập nhật sau khi đăng nhập"
+    },
+    {
+      "key": "apiVersion",
+      "value": "v1",
+      "description": "Phiên bản API hiện tại (từ .env API_VERSION=1)"
+    },
+    {
+      "key": "dev_url",
+      "value": "http://localhost:6002",
+      "description": "Môi trường phát triển theo cấu hình .env"
+    },
+    {
+      "key": "staging_url",
+      "value": "https://api-staging.shms.com",
+      "description": "Môi trường staging"
+    },
+    {
+      "key": "prod_url",
+      "value": "https://api.shms.com",
+      "description": "Môi trường sản phẩm"
+    },
+    {
+      "key": "adminWebsiteDomain",
+      "value": "http://localhost:8090",
+      "description": "Domain trang quản trị (từ .env ADMIN_WEBSITE_DOMAIN)"
+    },
+    {
+      "key": "doctorWebsiteDomain",
+      "value": "http://10.220.19.225:9090",
+      "description": "Domain trang bác sĩ (từ .env DOCTOR_WEBSITE_DOMAIN)"
+    }
+  ]
+}

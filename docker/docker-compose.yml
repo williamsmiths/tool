@@ -1,0 +1,18 @@
+services:
+
+  shms_be:
+    image: konghuan42/shms_be:v2.0.5
+    container_name: shms_be_v2.0.5
+    env_file:
+      - ./.env
+    ports:
+      - "6001:6003"
+    volumes:
+      - ./upload:/app/upload # Mount the upload directory
+    # restart: always # run as a service
+    networks:
+      - kong-net
+
+networks:
+  kong-net:
+    external: true
